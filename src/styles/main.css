@@ -108,3 +108,38 @@ a {
   .bignav .lilnav {
     text-decoration: none;
     color: black; }
+
+.lilmenuwrap {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  color: white;
+  transform: translate(-40px, -20px);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  cursor: pointer;
+  float: right;
+  transition: all 1s ease; }
+  .lilmenuwrap .lilmenuitems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .lilmenuwrap .lilmenuitems .lilnav {
+      text-decoration: none;
+      color: white;
+      font-size: 30px;
+      margin-bottom: 5px; }
+      .lilmenuwrap .lilmenuitems .lilnav:hover {
+        color: #bfbfbf; }
+  .lilmenuwrap .biglilmenu {
+    font-size: 40px; }
+    .lilmenuwrap .biglilmenu:hover {
+      color: #bfbfbf; }
+
+.gone {
+  opacity: 0;
+  transition: all 1s ease; }

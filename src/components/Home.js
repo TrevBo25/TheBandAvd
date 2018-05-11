@@ -3,7 +3,8 @@ import { Parallax } from 'react-scroll-parallax';
 import {Link} from 'react-router-dom';
 import { CLIENT_RENEG_WINDOW } from 'tls';
 
-import Nav from './Nav'
+import Nav from './Nav';
+import LilMenu from './LilMenu';
 
 export default class Home extends Component {
   constructor(){
@@ -19,19 +20,20 @@ export default class Home extends Component {
   }
 
   handleScroll(event) {
-    if (window.pageYOffset > 722 && !this.state.show){
+    if (window.pageYOffset > 550 && !this.state.show){
       this.setState({show:true})
-    } else if (window.pageYOffset < 722 && this.state.show){
+    } else if (window.pageYOffset < 550 && this.state.show){
       this.setState({show:false})
     }
   }
 
   render(){
     console.log(window.pageYOffset)
+    console.log(this.state);
     return(
       <div className="holder" >
-        <div></div>
-          <Nav />
+        <Nav />
+        <LilMenu show={this.state.show}/>
         <div style={{"overflow":"hidden"}}>
           <Parallax
             styleOuter={styles.hero}

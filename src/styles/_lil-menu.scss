@@ -1,0 +1,40 @@
+.lilmenuwrap{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    color: white;
+    transform: translate(-40px,-20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    cursor: pointer;
+    float: right;
+    transition: all 1s ease;
+    .lilmenuitems{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .lilnav{
+            text-decoration: none;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 5px;
+            &:hover{
+                color: rgb(191, 191, 191);
+            }
+        }
+    }
+    .biglilmenu{
+        font-size: 40px;
+        &:hover{
+            color: rgb(191, 191, 191);
+        }
+    }
+}
+.gone{
+    opacity: 0;
+    transition: all 1s ease;
+}
