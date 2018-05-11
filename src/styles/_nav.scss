@@ -1,0 +1,20 @@
+.bignav{
+    position: absolute;
+    top: 0;
+    right: 21;
+    z-index: 1;
+    height: 40px; 
+    width: 60%;
+    margin: 15px;
+    font-size: 25px; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    border-top: 3px black solid;
+    border-bottom: 3px black solid;
+    font-family: "Quattrocento";
+    .lilnav{
+        text-decoration: none;
+        color: black
+    }
+}
