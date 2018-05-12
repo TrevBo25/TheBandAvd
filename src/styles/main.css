@@ -142,4 +142,5 @@ a {
 
 .gone {
   opacity: 0;
-  transition: all 1s ease; }
+  transition: all 1s ease;
+  color: white; }

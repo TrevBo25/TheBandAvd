@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { SSL_OP_CRYPTOPRO_TLSEXT_BUG } from 'constants';
 
 export default class LilMenu extends Component {
     constructor(props){
