@@ -1,0 +1,86 @@
+.footer{
+    height: 350px; 
+    width: 100%; 
+    background-color: #1a1a1a; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    color: white;
+    background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/AvonDaleBnWCeiling.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    .logoholder{
+        width: 65%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .logofooter{
+            height: 50%;
+            width: auto;
+        }
+        .socialmediaholder{
+            width: 35%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 10px;
+            .smicon{
+                font-size: 35px;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(191, 191, 191); 
+                }
+            }
+        }
+    }
+    .emailholder{
+        height: 100%;
+        text-align: center;
+        width: 32%;
+        padding: 20px;
+        margin-right: 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .emailtitle{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .emailwords{
+            color: white;
+        }
+        .nameinput{
+            width: 90%;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .emailinput{
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 3px;
+            width: 90%;
+        }
+        .subscribebutton{
+            padding: 10px;
+            border-radius: 3px;
+            border: white 2px solid;
+            font-size: 20px;
+            width: 90%;
+            transition: all .5s ease;
+            cursor: pointer;
+            &:hover{
+                background-color: white;
+                color: black;
+                transition: all .5s ease;
+            }
+        }
+    }
+}

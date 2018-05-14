@@ -26,20 +26,4 @@
             align-items: center;
         }
     }
-    .footer{
-        height: 450px; 
-        width: 100%; 
-        background-color: #1a1a1a; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center;
-        .footerholder{
-            height: 80%;
-            width: 90%;
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-around; align-items: center; 
-            color: white
-        }
-    }
 }

@@ -5,6 +5,7 @@ import { CLIENT_RENEG_WINDOW } from 'tls';
 
 import Nav from './Nav';
 import LilMenu from './LilMenu';
+import Footer from './Footer';
 
 export default class Home extends Component {
   constructor(){
@@ -55,26 +56,11 @@ export default class Home extends Component {
           </div>
         </div>
         <div style={{"overflow":"hidden", }}>
-          <Parallax
-            styleOuter={styles.hero}
-            offsetYMax={200}
-            offsetYMin={-200}
-            slowerScrollRate
-            tag="figure"
-          >
-            <img src='https://s3.us-east-2.amazonaws.com/thebandavd/AvonDaleStudio-126.jpg' alt='AVD Band picture' style={styles.logo}/>
-          </Parallax>
+          <img src='https://s3.us-east-2.amazonaws.com/thebandavd/AvonDaleStudio-126.jpg' alt='AVD Band picture' style={styles.logo}/>
         </div>
         <div style={styles.gifholder}>
         </div>
-        <div className="footer">
-          <div className="footerholder">
-            <h1 style={{"fontSize": "60px", "textAlign": "center"}}>This is the footer</h1>
-            <h3 style={{"fontSize": "25px", "textAlign": "center"}}>Here is where the contact information and such will go</h3>
-            <h3 style={{"fontSize": "25px", "textAlign": "center"}}>Twitter, YoutTube, Facebook, Spotify, All the good stuff</h3>
-            <h3 style={{"fontSize": "25px", "textAlign": "center"}}>Also we can put a email news letter sign up input here if you so choose</h3>
-          </div>
-        </div>
+        <Footer />
       </div>
     )
   }
