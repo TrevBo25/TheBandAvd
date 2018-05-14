@@ -93,7 +93,6 @@ a {
 .bignav {
   position: absolute;
   top: 0;
-  right: 21;
   z-index: 1;
   height: 40px;
   width: 60%;
@@ -108,6 +107,17 @@ a {
   .bignav .lilnav {
     text-decoration: none;
     color: black; }
+
+.holder {
+  max-width: 100vw;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Roboto Mono"; }
 
 .lilmenuwrap {
   position: fixed;
