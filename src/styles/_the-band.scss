@@ -1,11 +1,54 @@
-.holder{
-    max-width: 100vw;
-    height: 100%;
-    background-color: white;
+.bandholder{
+    width: 100vw;
+    height: 700px;
+    padding-top: 10px;
+    background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     overflow: hidden;
     font-family: "Roboto Mono";
+    color: white;
+    position: relative;
+    .modalholder{
+        position: absolute;
+    }
+    .bandtitle{
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .infoholder{
+        width: 70%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .bandimgholder{
+        height: 320px;
+        width: 640px;
+        background-color: white;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        .bandimg{
+            height: 97%;
+            width: 97%;
+            border-radius: 15px;
+        }
+    }
+    .bandbutton{
+        border: 2px solid white;
+        border-radius: 2px;
+        padding: 15px;
+        transition: all .5s ease;
+        cursor: pointer;
+        margin-bottom: 10px;
+        &:hover{
+            background-color: white;
+            color: #1a1a1a;
+            transition: all .5s ease;
+        }
+    }
 }

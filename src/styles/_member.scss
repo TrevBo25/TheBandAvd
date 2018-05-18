@@ -1,0 +1,87 @@
+.memberholder{
+    height: 420px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Roboto Mono";
+    margin: 0;
+    .memberphoto{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .memberimg{
+            height: 90%;
+            width: auto;
+        }
+    }
+    .memberinfo{
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .memberjob{
+            flex: 1;
+            color: #1a1a1a;
+            font-size: 20px;
+        }
+        .membername{
+            flex: 2;
+            color: black;
+            font-size: 50px;
+        }
+        .memberbio{
+            flex: 5;
+            color: #1a1a1a;
+            font-size: 15px;
+        }
+    }
+}
+.memberholderflip{
+    height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Roboto Mono";
+    margin: 0;
+    .memberphoto{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .memberimg{
+            height: 90%;
+            width: auto;
+        }
+    }
+    .memberinfo{
+        height: 80%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .memberjob{
+            flex: 1;
+            color: #1a1a1a;
+            font-size: 20px;
+        }
+        .membername{
+            flex: 2;
+            color: black;
+            font-size: 50px;
+        }
+        .memberbio{
+            flex: 5;
+            color: #1a1a1a;
+            font-size: 15px;
+        }
+    }
+}

@@ -1,65 +1,64 @@
 import React, {Component} from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import {Link} from 'react-router-dom';
-import { CLIENT_RENEG_WINDOW } from 'tls';
+import ScrollableAnchor from 'react-scrollable-anchor'
+import { configureAnchors } from 'react-scrollable-anchor'
 
 import Nav from './Nav';
-import LilMenu from './LilMenu';
 import Footer from './Footer';
+import TheBand from './TheBand';
+import Tour from './Tour';
+import Media from './Media';
+import Store from './Store';
+import Contact from './Contact';
 
 export default class Home extends Component {
   constructor(){
     super()
     this.state = {
-      show: false
     }
-    this.handleScroll = this.handleScroll.bind(this)
   }
 
-  componentDidMount(){
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
-  handleScroll(event) {
-    if (window.pageYOffset > 550 && !this.state.show){
-      this.setState({show:true})
-    } else if (window.pageYOffset < 550 && this.state.show){
-      this.setState({show:false})
-    }
+  componentWillMount(){
+    configureAnchors({offset: -56, scrollDuration: 600})
   }
 
   render(){
-    console.log(window.pageYOffset)
-    console.log(this.state);
     return(
-      <div className="holder" >
+      <div className="holder">
         <Nav />
-        <LilMenu show={this.state.show}/>
-        <div style={{"overflow":"hidden"}}>
-          <Parallax
-            styleOuter={styles.hero}
-            offsetYMax={100}
-            offsetYMin={-100}
-            slowerScrollRate
-            tag="figure"
-          >
-            <img src='https://s3.us-east-2.amazonaws.com/thebandavd/AVDLogoNBG.png' alt='AVD Band logo' style={styles.logo}/>
-          </Parallax>
-        </div>
-        <div className="middle" >
-          <div className="middleholder">
-            <h1 style={{"fontSize": "50px", "textAlign": "center"}}>This is where some information about the new album could go</h1>
-            <h3 style={{"fontSize": "30px", "textAlign": "center"}}>Spotify song/album links</h3>
-            <h3 style={{"fontSize": "30px", "textAlign": "center"}}>Album Art</h3>
-            <h3 style={{"fontSize": "30px", "textAlign": "center"}}>Purchase now spot</h3>
-            <p style={{"fontSize": "15px", "textAlign": "center"}}>Some of you favorite lyrics from a few songs could carousel here: <br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br/>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br/>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ScrollableAnchor id={'home'}>
+          <div style={{"overflow":"hidden"}}>
+            <Parallax
+              styleOuter={styles.hero}
+              offsetYMax={100}
+              offsetYMin={-100}
+              slowerScrollRate
+              tag="figure"
+            >
+              <img src='https://s3.us-east-2.amazonaws.com/thebandavd/AVDLogoNBG.png' alt='AVD Band logo' style={styles.logo}/>
+            </Parallax>
           </div>
-        </div>
-        <div style={{"overflow":"hidden", }}>
-          <img src='https://s3.us-east-2.amazonaws.com/thebandavd/AvonDaleStudio-126.jpg' alt='AVD Band picture' style={styles.logo}/>
-        </div>
-        <div style={styles.gifholder}>
-        </div>
+        </ScrollableAnchor>
+        <div style={styles.whitebar}></div>
+        <ScrollableAnchor id={'band'}>
+          <TheBand />
+        </ScrollableAnchor>
+        <div style={styles.whitebar}></div>
+        <ScrollableAnchor id={'tour'}>
+          <Tour />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'media'}>
+          <Media />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'store'}>
+          <Store />
+        </ScrollableAnchor>
+        <div style={styles.whitebar}></div>
+        <div style={styles.gifholder}></div>
+        <div style={styles.whitebar}></div>
+        <ScrollableAnchor id={'contact'}>
+          <Contact />
+        </ScrollableAnchor>
         <Footer />
       </div>
     )
@@ -85,5 +84,10 @@ const styles = {
     "width": "100%",
     "backgroundImage": `url(${'https://s3.us-east-2.amazonaws.com/thebandavd/avdcolor.gif'})`,
     "backgroundSize": "cover",
+  },
+  whitebar:{
+    "height": "3px",
+    "width": "100%",
+    "backgroundColor": "white"
   }
 }

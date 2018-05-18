@@ -76,33 +76,75 @@ a {
       align-items: center; }
 
 .bignav {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 1;
-  height: 40px;
-  width: 60%;
-  margin: 15px;
-  font-size: 25px;
+  height: 50px;
+  width: 100%;
+  font-size: 30px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   border-top: 3px black solid;
   border-bottom: 3px black solid;
-  font-family: "Quattrocento"; }
-  .bignav .lilnav {
-    text-decoration: none;
-    color: black; }
+  font-family: "Quattrocento";
+  background-color: white; }
+  .bignav .navbuttonholder {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .bignav .navbuttonholder .lilnav {
+      text-decoration: none;
+      color: black;
+      cursor: pointer; }
 
-.holder {
-  max-width: 100vw;
-  height: 100%;
-  background-color: white;
+.bandholder {
+  width: 100vw;
+  height: 700px;
+  padding-top: 10px;
+  background-color: #1a1a1a;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  font-family: "Roboto Mono"; }
+  font-family: "Roboto Mono";
+  color: white;
+  position: relative; }
+  .bandholder .modalholder {
+    position: absolute; }
+  .bandholder .bandtitle {
+    font-weight: bold;
+    font-size: 60px; }
+  .bandholder .infoholder {
+    width: 70%;
+    text-align: center;
+    font-size: 15px; }
+  .bandholder .bandimgholder {
+    height: 320px;
+    width: 640px;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px; }
+    .bandholder .bandimgholder .bandimg {
+      height: 97%;
+      width: 97%;
+      border-radius: 15px; }
+  .bandholder .bandbutton {
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+    margin-bottom: 10px; }
+    .bandholder .bandbutton:hover {
+      background-color: white;
+      color: #1a1a1a;
+      transition: all .5s ease; }
 
 .lilmenuwrap {
   position: fixed;
@@ -213,3 +255,151 @@ a {
         background-color: white;
         color: black;
         transition: all .5s ease; }
+
+.bandinfoholder {
+  border: 4px #1a1a1a solid;
+  height: 500px;
+  width: 1000px;
+  background-color: white;
+  border-radius: 5px;
+  overflow: auto;
+  padding: 30px; }
+
+.memberholder {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto Mono";
+  margin: 0; }
+  .memberholder .memberphoto {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .memberholder .memberphoto .memberimg {
+      height: 90%;
+      width: auto; }
+  .memberholder .memberinfo {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .memberholder .memberinfo .memberjob {
+      flex: 1;
+      color: #1a1a1a;
+      font-size: 20px; }
+    .memberholder .memberinfo .membername {
+      flex: 2;
+      color: black;
+      font-size: 50px; }
+    .memberholder .memberinfo .memberbio {
+      flex: 5;
+      color: #1a1a1a;
+      font-size: 15px; }
+
+.memberholderflip {
+  height: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Roboto Mono";
+  margin: 0; }
+  .memberholderflip .memberphoto {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .memberholderflip .memberphoto .memberimg {
+      height: 90%;
+      width: auto; }
+  .memberholderflip .memberinfo {
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .memberholderflip .memberinfo .memberjob {
+      flex: 1;
+      color: #1a1a1a;
+      font-size: 20px; }
+    .memberholderflip .memberinfo .membername {
+      flex: 2;
+      color: black;
+      font-size: 50px; }
+    .memberholderflip .memberinfo .memberbio {
+      flex: 5;
+      color: #1a1a1a;
+      font-size: 15px; }
+
+.tourholder {
+  width: 100vw;
+  height: 1000px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #DADADA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Roboto Mono";
+  color: #1a1a1a;
+  position: relative; }
+  .tourholder .tourtitle {
+    font-size: 60px;
+    font-weight: bold; }
+  .tourholder .tourdateholder {
+    width: 80%;
+    height: 85%; }
+    .tourholder .tourdateholder .toursubtitle {
+      font-size: 20px; }
+    .tourholder .tourdateholder .dateholder {
+      width: 100%;
+      height: 95%;
+      overflow: auto; }
+
+.TDholder {
+  width: 95%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  color: #1a1a1a; }
+  .TDholder .dateandplaceholder {
+    width: 27%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .TDholder .dateandplaceholder .date {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .TDholder .dateandplaceholder .date .datenumber {
+        font-size: 40px;
+        margin-right: 5px;
+        transform: translateY(-8px); }
+      .TDholder .dateandplaceholder .date .datemonth {
+        font-weight: bold; }
+    .TDholder .dateandplaceholder .venue {
+      font-weight: bold; }
+  .TDholder .tourbutton {
+    border: 2px #1a1a1a solid;
+    padding: 20px 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s ease; }
+    .TDholder .tourbutton:hover {
+      background-color: #1a1a1a;
+      color: #DADADA;
+      transition: all .3s ease; }

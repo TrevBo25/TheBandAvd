@@ -1,20 +1,26 @@
 .bignav{
-    position: absolute;
+    position: fixed;
     top: 0;
-    // right: 21;
     z-index: 1;
-    height: 40px; 
-    width: 60%;
-    margin: 15px;
-    font-size: 25px; 
+    height: 50px; 
+    width: 100%;
+    font-size: 30px; 
     display: flex; 
-    justify-content: space-around; 
+    justify-content: center; 
     align-items: center; 
     border-top: 3px black solid;
     border-bottom: 3px black solid;
     font-family: "Quattrocento";
-    .lilnav{
-        text-decoration: none;
-        color: black
+    background-color: white;
+    .navbuttonholder{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .lilnav{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
     }
 }
