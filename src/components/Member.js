@@ -4,7 +4,7 @@ const Member = ({flip}) => {
     return(
         <div className={flip ? "memberholderflip" : "memberholder"}>
             <div className="memberphoto">
-                <img src="http://3.bp.blogspot.com/-Y4-tPEAfFls/TgMs1KnIyOI/AAAAAAAAAh8/gocIwiJr-rw/s1600/nedstark.png" alt="Band Member Image" className="memberimg" />
+                <img src="http://3.bp.blogspot.com/-Y4-tPEAfFls/TgMs1KnIyOI/AAAAAAAAAh8/gocIwiJr-rw/s1600/nedstark.png" alt="" className="memberimg" />
             </div>
             <div className="memberinfo">
                 <h3 className="memberjob">Warden of the North / Dead Dude</h3>
