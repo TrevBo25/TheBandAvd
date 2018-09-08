@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import BandInfo from './BandInfo';
 
-export default class TheBand extends Component{
+export default class TheBand extends Component {
   constructor(){
     super()
     this.state = {
@@ -45,7 +45,21 @@ export default class TheBand extends Component{
         {this.state.show ? <div className="modalholder" ref={bandHolder => this.bandHolder = bandHolder}><BandInfo /></div> : null}
         <h1 className="bandtitle">The Band Avon Dale</h1>
         <div className="infoholder">
-          <p className="bandinfo">The Legion of Doom is one of several supervillain teams that have risen up in opposition to the Justice League over the years. The team roster remains pretty fluid, but the main goal of the Legion of Doom is always the same - to join forces and ensure that the Justice League are never able to rid the world of evil through sheer, overwhelming numbers. The Legion of Doom are pretty straightforward in their goals. They don't pretend to be fighting on the right side of history or helping the innocent. After all, they have a hidden lair in a place called Slaughter Swamp. They're simply a group of pragmatic villains who reluctantly work together in order to avoid having to take on the Justice League alone. The Legion of Doom has been through many incarnations over the years, and the roster has changed quite a bit in that time. However, the original group of 13 villains introduced in the animated series Challenge of the Super Friends tends to be looked at as the gold standard. Lex Luthor, Gorilla Grodd, Bizarro, Black Manta, Brainiac, Captain Cold, Cheetah, Giganta, Riddler, Scarecrow, Sinestro, Solomon Grundy, and Toyman.</p>
+          <p className="bandinfo">
+          <br />
+          A few years ago, the band Avon Dale played a series of shows to bid farewell to its founding guitarist, leaving the band to teach abroad. That mini-tour hit three cities, each of which could stake a claim at being the band’s hometown: Champaign-Urbana, Chicago, and Memphis.
+          <br />
+          <br />
+          The band first formed in the cornfields of the Midwest in their college town of Champaign-Urbana. Chicago was home, where they found their most loyal fanbase. And in 2013, they moved to Memphis, where they found the legendary Ardent Studios and producer/engineer Mike Wilson, who has helmed all three of their records – EPs <i>Dress it Up</i> (2014) and <i>Little Ditty</i> (2016), and their forthcoming debut full-length, <i>Whiskey and Sherbet</i>. 
+          <br />
+          <br />
+          But fittingly those cities also serve as a sort of sonic road map for Avon Dale, whose sound is Midwest roots rock meets Chicago blues meets Southern soul. They’ve spent plenty of time tearing up the roads between those cities, and across the country, touring steadily since the release of their debut EP. Their 2017 summer outing, dubbed the Strings and Rust Tour after a lyric on the <i>Little Ditty</i> EP, was both an initiation and a three-month long celebration – they’d quit their day jobs to pursue music full-time. 
+          <br />
+          <br />
+          With so much time spent on the road, it’s no surprise that the four-piece – Conrad Polz (lead vocal, guitar), Alec Heist (drums), Drew Allen (bass), Patrick Vaughan (guitar) – is a powerful live act. Their tight rhythm section, blues-inspired electric guitar riffs and soulful vocals make them danceable, drinkable, perfect for your fleeting night out – and their songs, which range from tender and plaintive to gritty and wry, are what bring you back as a lifelong fan. 
+          <br />
+          <br />
+          </p>
         </div>
         <div className="bandimgholder">
           <img src="https://s3.us-east-2.amazonaws.com/thebandavd/GroupCropped.jpg" alt="" className="bandimg"/>

@@ -8,10 +8,9 @@
     display: flex; 
     justify-content: center; 
     align-items: center; 
-    border-top: 3px black solid;
-    border-bottom: 3px black solid;
-    font-family: "Quattrocento";
-    background-color: white;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    font-family: $secondaryfont;
     .navbuttonholder{
         width: 80%;
         display: flex;

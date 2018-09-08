@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,29 +52,23 @@ a {
 .holder {
   max-width: 100vw;
   height: 100%;
-  background-color: white;
+  background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: "Roboto Mono"; }
-  .holder .middle {
-    height: 900px;
+  font-family: "Oswald", sans-serif; }
+  .holder .gifholder {
+    height: 800px;
     width: 100%;
-    background-color: #1a1a1a;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .holder .middle .middleholder {
-      height: 70%;
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center; }
+    background-image: url("./assets/AVDgif.gif");
+    background-size: cover;
+    background-position: center; }
+  .holder .whitebar {
+    height: 3px;
+    width: 100%;
+    background-color: white; }
 
 .bignav {
   position: fixed;
@@ -85,10 +80,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 3px black solid;
-  border-bottom: 3px black solid;
-  font-family: "Quattrocento";
-  background-color: white; }
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  font-family: "Oswald", sans-serif; }
   .bignav .navbuttonholder {
     width: 80%;
     display: flex;
@@ -101,7 +95,7 @@ a {
 
 .bandholder {
   width: 100vw;
-  height: 700px;
+  height: 800px;
   padding-top: 10px;
   background-color: #1a1a1a;
   display: flex;
@@ -109,18 +103,18 @@ a {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  font-family: "Roboto Mono";
+  font-family: "Oswald", sans-serif;
   color: white;
   position: relative; }
   .bandholder .modalholder {
     position: absolute; }
   .bandholder .bandtitle {
     font-weight: bold;
-    font-size: 60px; }
+    font-size: 80px; }
   .bandholder .infoholder {
     width: 70%;
-    text-align: center;
-    font-size: 15px; }
+    text-align: left;
+    font-size: 20px; }
   .bandholder .bandimgholder {
     height: 320px;
     width: 640px;
@@ -271,7 +265,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: "Roboto Mono";
+  font-family: "Oswald", sans-serif;
   margin: 0; }
   .memberholder .memberphoto {
     height: 100%;
@@ -351,7 +345,7 @@ a {
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
-  font-family: "Roboto Mono";
+  font-family: "Oswald", sans-serif;
   color: #1a1a1a;
   position: relative; }
   .tourholder .tourtitle {
@@ -403,3 +397,12 @@ a {
       background-color: #1a1a1a;
       color: #DADADA;
       transition: all .3s ease; }
+
+.bighero {
+  width: 100%;
+  height: auto;
+  margin-top: 54px; }
+  .bighero .biglogo {
+    height: auto;
+    max-width: 100%;
+    margin: auto; }

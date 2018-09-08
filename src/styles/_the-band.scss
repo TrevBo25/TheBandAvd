@@ -1,6 +1,6 @@
 .bandholder{
     width: 100vw;
-    height: 700px;
+    height: 800px;
     padding-top: 10px;
     background-color: #1a1a1a;
     display: flex;
@@ -8,7 +8,7 @@
     justify-content: space-around;
     align-items: center;
     overflow: hidden;
-    font-family: "Roboto Mono";
+    font-family: $secondaryfont;
     color: white;
     position: relative;
     .modalholder{
@@ -16,12 +16,12 @@
     }
     .bandtitle{
         font-weight: bold;
-        font-size: 60px;
+        font-size: 80px;
     }
     .infoholder{
         width: 70%;
-        text-align: center;
-        font-size: 15px;
+        text-align: left;
+        font-size: 20px;
     }
     .bandimgholder{
         height: 320px;
