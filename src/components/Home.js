@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Parallax } from 'react-scroll-parallax';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { configureAnchors } from 'react-scrollable-anchor'
 
@@ -20,7 +19,7 @@ export default class Home extends Component {
   }
 
   componentWillMount(){
-    configureAnchors({offset: -56, scrollDuration: 600})
+    configureAnchors({offset: -54, scrollDuration: 600})
   }
 
   render(){
@@ -34,16 +33,15 @@ export default class Home extends Component {
         <ScrollableAnchor id={'band'}>
           <TheBand />
         </ScrollableAnchor>
-        <div className="whitebar" ></div>
         <ScrollableAnchor id={'tour'}>
           <Tour />
         </ScrollableAnchor>
         <ScrollableAnchor id={'media'}>
           <Media />
         </ScrollableAnchor>
-        <ScrollableAnchor id={'store'}>
+        {/* <ScrollableAnchor id={'store'}>
           <Store />
-        </ScrollableAnchor>
+        </ScrollableAnchor> */}
         <div className="whitebar" ></div>
         <div className="gifholder" ></div>
         <div className="whitebar"></div>

@@ -1,4 +1,4 @@
-.bignav{
+.light{
     position: fixed;
     top: 0;
     z-index: 1;
@@ -11,6 +11,8 @@
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     font-family: $secondaryfont;
+    background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png");
+    transition: all 1.5s ease;
     .navbuttonholder{
         width: 80%;
         display: flex;
@@ -19,6 +21,33 @@
         .lilnav{
             text-decoration: none;
             color: black;
+            cursor: pointer;
+        }
+    }
+}
+.dark {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 50px; 
+    width: 100%;
+    font-size: 30px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    font-family: $secondaryfont;
+    background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg");
+    transition: all 1.5s ease;
+    .navbuttonholder{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .lilnav{
+            text-decoration: none;
+            color: white;
             cursor: pointer;
         }
     }

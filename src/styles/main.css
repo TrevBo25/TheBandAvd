@@ -70,7 +70,7 @@ a {
     width: 100%;
     background-color: white; }
 
-.bignav {
+.light {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -82,15 +82,42 @@ a {
   align-items: center;
   border-top: 2px black solid;
   border-bottom: 2px black solid;
-  font-family: "Oswald", sans-serif; }
-  .bignav .navbuttonholder {
+  font-family: "Oswald", sans-serif;
+  background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png");
+  transition: all 1.5s ease; }
+  .light .navbuttonholder {
     width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    .bignav .navbuttonholder .lilnav {
+    .light .navbuttonholder .lilnav {
       text-decoration: none;
       color: black;
+      cursor: pointer; }
+
+.dark {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  font-family: "Oswald", sans-serif;
+  background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg");
+  transition: all 1.5s ease; }
+  .dark .navbuttonholder {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .dark .navbuttonholder .lilnav {
+      text-decoration: none;
+      color: white;
       cursor: pointer; }
 
 .bandholder {
@@ -208,7 +235,8 @@ a {
       margin-top: 10px; }
       .footer .logoholder .socialmediaholder .smicon {
         font-size: 35px;
-        cursor: pointer; }
+        cursor: pointer;
+        color: white; }
         .footer .logoholder .socialmediaholder .smicon:hover {
           color: #bfbfbf; }
   .footer .emailholder {
@@ -339,7 +367,7 @@ a {
   height: 1000px;
   padding-top: 40px;
   padding-bottom: 20px;
-  background-color: #DADADA;
+  background-color: #EFFCFA;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -361,43 +389,6 @@ a {
       height: 95%;
       overflow: auto; }
 
-.TDholder {
-  width: 95%;
-  height: 130px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 20px;
-  color: #1a1a1a; }
-  .TDholder .dateandplaceholder {
-    width: 27%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .TDholder .dateandplaceholder .date {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-      .TDholder .dateandplaceholder .date .datenumber {
-        font-size: 40px;
-        margin-right: 5px;
-        transform: translateY(-8px); }
-      .TDholder .dateandplaceholder .date .datemonth {
-        font-weight: bold; }
-    .TDholder .dateandplaceholder .venue {
-      font-weight: bold; }
-  .TDholder .tourbutton {
-    border: 2px #1a1a1a solid;
-    padding: 20px 50px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all .3s ease; }
-    .TDholder .tourbutton:hover {
-      background-color: #1a1a1a;
-      color: #DADADA;
-      transition: all .3s ease; }
-
 .bighero {
   width: 100%;
   height: auto;
@@ -406,3 +397,118 @@ a {
     height: auto;
     max-width: 100%;
     margin: auto; }
+
+.bigmedia {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .bigmedia .title {
+    font-size: 60px;
+    font-weight: bold; }
+  .bigmedia .toggles {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: space-around; }
+    .bigmedia .toggles .togglebutton {
+      margin-right: 10px;
+      font-size: 25px; }
+      .bigmedia .toggles .togglebutton:hover {
+        color: gray;
+        cursor: pointer; }
+    .bigmedia .toggles .togglebuttonselected {
+      margin-right: 10px;
+      font-size: 25px;
+      color: #EBFDFA; }
+      .bigmedia .toggles .togglebuttonselected:hover {
+        color: lightgray;
+        cursor: pointer; }
+  .bigmedia .mediaholder {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; }
+    .bigmedia .mediaholder .mediamusic {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      .bigmedia .mediaholder .mediamusic .newmusic {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .bigmedia .mediaholder .mediamusic .newmusic .covertitle {
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 20px; }
+        .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder {
+          height: 100%;
+          width: 100%;
+          display: flex; }
+          .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; }
+            .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder .cover {
+              max-height: 500px;
+              max-width: auto; }
+      .bigmedia .mediaholder .mediamusic .oldmusic {
+        flex: 1;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .bigmedia .mediaholder .mediamusic .oldmusic .covertitle {
+          font-size: 40px;
+          font-weight: bold;
+          margin-bottom: 20px; }
+        .bigmedia .mediaholder .mediamusic .oldmusic .oldmusicholder {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          align-items: center; }
+          .bigmedia .mediaholder .mediamusic .oldmusic .oldmusicholder .coverholder {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center; }
+            .bigmedia .mediaholder .mediamusic .oldmusic .oldmusicholder .coverholder .lilcover {
+              max-height: 250px;
+              max-width: auto;
+              margin-bottom: 20px; }
+    .bigmedia .mediaholder .mediavideos {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .bigmedia .mediaholder .mediavideos .videorow {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between; }
+        .bigmedia .mediaholder .mediavideos .videorow .video1 {
+          padding: 20px 0px 10px 0px;
+          overflow: hidden; }
+        .bigmedia .mediaholder .mediavideos .videorow .video2 {
+          padding: 10px 0px 20px 0px; }
