@@ -41,7 +41,7 @@ export default class TheBand extends Component {
 
   render(){
     return(
-      <div className="bandholder">
+      <div className="bandholder" id="theband">
         {this.state.show ? <div className="modalholder" ref={bandHolder => this.bandHolder = bandHolder}><BandInfo /></div> : null}
         <h1 className="bandtitle">The Band Avon Dale</h1>
         <div className="infoholder">

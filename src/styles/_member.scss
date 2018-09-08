@@ -12,6 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         .memberimg{
             height: 90%;
             width: auto;
@@ -24,6 +25,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        margin-left: 20px;
         .memberjob{
             flex: 1;
             color: #1a1a1a;
@@ -48,7 +50,7 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    font-family: "Roboto Mono";
+    font-family: $secondaryfont;
     margin: 0;
     .memberphoto{
         height: 100%;
@@ -56,6 +58,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
         .memberimg{
             height: 90%;
             width: auto;

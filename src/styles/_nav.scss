@@ -22,6 +22,10 @@
             text-decoration: none;
             color: black;
             cursor: pointer;
+            &:hover{
+                color: rgb(122, 122, 122);
+                transition: all .25s ease;
+            }
         }
     }
 }
@@ -49,6 +53,10 @@
             text-decoration: none;
             color: white;
             cursor: pointer;
+            &:hover{
+                color: rgb(184, 184, 184);
+                transition: all .25s ease;
+            }
         }
     }
 }

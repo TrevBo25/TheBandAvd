@@ -94,6 +94,9 @@ a {
       text-decoration: none;
       color: black;
       cursor: pointer; }
+      .light .navbuttonholder .lilnav:hover {
+        color: #7a7a7a;
+        transition: all .25s ease; }
 
 .dark {
   position: fixed;
@@ -119,10 +122,13 @@ a {
       text-decoration: none;
       color: white;
       cursor: pointer; }
+      .dark .navbuttonholder .lilnav:hover {
+        color: #b8b8b8;
+        transition: all .25s ease; }
 
 .bandholder {
   width: 100vw;
-  height: 800px;
+  height: 100%;
   padding-top: 10px;
   background-color: #1a1a1a;
   display: flex;
@@ -161,7 +167,8 @@ a {
     padding: 15px;
     transition: all .5s ease;
     cursor: pointer;
-    margin-bottom: 10px; }
+    margin-bottom: 20px;
+    margin-top: 20px; }
     .bandholder .bandbutton:hover {
       background-color: white;
       color: #1a1a1a;
@@ -211,7 +218,7 @@ a {
   justify-content: space-between;
   align-items: center;
   color: white;
-  background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/AvonDaleBnWCeiling.jpg");
+  background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/forest2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -300,7 +307,8 @@ a {
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
     .memberholder .memberphoto .memberimg {
       height: 90%;
       width: auto; }
@@ -310,7 +318,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin-left: 20px; }
     .memberholder .memberinfo .memberjob {
       flex: 1;
       color: #1a1a1a;
@@ -331,14 +340,15 @@ a {
   flex-direction: row-reverse;
   justify-content: space-around;
   align-items: center;
-  font-family: "Roboto Mono";
+  font-family: "Oswald", sans-serif;
   margin: 0; }
   .memberholderflip .memberphoto {
     height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    overflow: hidden; }
     .memberholderflip .memberphoto .memberimg {
       height: 90%;
       width: auto; }
@@ -493,8 +503,10 @@ a {
             align-items: center; }
             .bigmedia .mediaholder .mediamusic .oldmusic .oldmusicholder .coverholder .lilcover {
               max-height: 250px;
-              max-width: auto;
-              margin-bottom: 20px; }
+              max-width: 250px;
+              margin: 10px 0px; }
+              .bigmedia .mediaholder .mediamusic .oldmusic .oldmusicholder .coverholder .lilcover:hover {
+                cursor: pointer; }
     .bigmedia .mediaholder .mediavideos {
       height: 100%;
       width: 80%;

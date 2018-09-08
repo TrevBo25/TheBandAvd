@@ -25,7 +25,7 @@ export default class Home extends Component {
   render(){
     return(
       <div className="holder">
-        <Nav />
+          <Nav />
         <ScrollableAnchor id={'home'}>
           <Hero />
         </ScrollableAnchor>
@@ -39,16 +39,13 @@ export default class Home extends Component {
         <ScrollableAnchor id={'media'}>
           <Media />
         </ScrollableAnchor>
-        {/* <ScrollableAnchor id={'store'}>
-          <Store />
-        </ScrollableAnchor> */}
         <div className="whitebar" ></div>
         <div className="gifholder" ></div>
         <div className="whitebar"></div>
         <ScrollableAnchor id={'contact'}>
-          <Contact />
+          {/* <Contact /> */}
+          <Footer />
         </ScrollableAnchor>
-        <Footer />
       </div>
     )
   }

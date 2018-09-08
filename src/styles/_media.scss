@@ -105,8 +105,11 @@
                         align-items: center;
                         .lilcover {
                             max-height: 250px;
-                            max-width: auto;
-                            margin-bottom: 20px;
+                            max-width: 250px;
+                            margin: 10px 0px;
+                            &:hover{
+                                cursor: pointer; 
+                            }
                         }
                     }
                 }

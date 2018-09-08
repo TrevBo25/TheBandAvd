@@ -14,10 +14,9 @@ export default class Footer extends Component {
                     <div className="socialmediaholder">
                         <a href="https://twitter.com/avdbnd?lang=en" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-twitter"></i></a>
                         <a href="https://www.facebook.com/thebandavondale/" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-facebook-f"></i></a>
-                        <a href="https://instantostrich.com/" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/thebandavondale/" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-instagram"></i></a>
                         <a href="https://www.youtube.com/user/thebandavondale" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-youtube"></i></a>
                         <a href="https://open.spotify.com/artist/1s6Fgx0rDx46sATrAURbq5" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-spotify"></i></a>
-                        <a href="https://soundcloud.com/avdbnd" target="_blank" rel="noopener noreferrer" ><i className="smicon fab fa-soundcloud"></i></a>
                     </div>
                 </div>
                 <div className="emailholder">

@@ -9,8 +9,10 @@ export default class Nav extends Component {
   }
 
   listenScrollEvent = e => {
-    console.log(window.scrollY);
-    if (window.scrollY > 1000 && window.scrollY < 2874) {
+    var bodytop = document.body.getBoundingClientRect().top;
+    var bandtop = document.getElementById("theband").getBoundingClientRect().top;
+    var mediatop = document.getElementById("mediael").getBoundingClientRect().top;
+    if ((window.scrollY + 54) > (bandtop - bodytop) &&(window.scrollY + 54) < (mediatop - bodytop)) {
       this.setState({background: "light"})
     } else {
       this.setState({background: "dark"})
@@ -19,6 +21,16 @@ export default class Nav extends Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent)
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  updateWindowDimensions() {
+    console.log( window.innerWidth, window.innerHeight );
   }
 
   render() {
@@ -29,8 +41,8 @@ export default class Nav extends Component {
           <a href="#band"><span className="lilnav">THE BAND</span></a>
           <a href="#tour"><span className="lilnav">TOUR</span></a>
           <a href="#media"><span className="lilnav">MEDIA</span></a>
-          {/* <a href="#store"><span className="lilnav">STORE</span></a> */}
           <a href="#contact"><span className="lilnav">CONTACT</span></a>
+          <a href="http://signalflowpr.com/avon-dale/" target="_blank" rel="noopener noreferrer" ><span className="lilnav">EPK</span></a>
         </div>
       </div>
     )
