@@ -66,45 +66,41 @@ export default class Media extends Component{
           </div> : null }
           {this.state.choice === 2 ? 
           <div className="mediavideos">
-            <div className="videorow">
-              <div className="video1">
-                <iframe id="ytplayer" 
-                        type="text/html" 
-                        width="640" 
-                        height="360"
-                        src="https://www.youtube.com/embed/eS2UhKFnaPc?autoplay=0"
-                        frameborder="0">
-                </iframe>
-              </div>
-              <div className="video1">
-                <iframe id="ytplayer" 
-                        type="text/html" 
-                        width="640" 
-                        height="360"
-                        src="https://www.youtube.com/embed/J43FbO07d6Y?autoplay=0"
-                        frameborder="0">
-                </iframe>
-              </div>
+            <div className="video">
+              <iframe id="ytplayer" 
+                      type="text/html" 
+                      width="640" 
+                      height="360"
+                      src="https://www.youtube.com/embed/eS2UhKFnaPc?autoplay=0"
+                      frameborder="0">
+              </iframe>
             </div>
-            <div className="videorow">
-              <div className="video2">
-                <iframe id="ytplayer" 
-                        type="text/html" 
-                        width="640" 
-                        height="360"
-                        src="https://www.youtube.com/embed/w9JmEtFm83s?autoplay=0"
-                        frameborder="0">
-                </iframe>
-              </div>
-              <div className="video2">
-                <iframe id="ytplayer" 
-                        type="text/html" 
-                        width="640" 
-                        height="360"
-                        src="https://www.youtube.com/embed/HM8cKb6yLa0?autoplay=0"
-                        frameborder="0">
-                </iframe>
-              </div>
+            <div className="video">
+              <iframe id="ytplayer" 
+                      type="text/html" 
+                      width="640" 
+                      height="360"
+                      src="https://www.youtube.com/embed/J43FbO07d6Y?autoplay=0"
+                      frameborder="0">
+              </iframe>
+            </div>
+            <div className="video">
+              <iframe id="ytplayer" 
+                      type="text/html" 
+                      width="640" 
+                      height="360"
+                      src="https://www.youtube.com/embed/w9JmEtFm83s?autoplay=0"
+                      frameborder="0">
+              </iframe>
+            </div>
+            <div className="video">
+              <iframe id="ytplayer" 
+                      type="text/html" 
+                      width="640" 
+                      height="360"
+                      src="https://www.youtube.com/embed/HM8cKb6yLa0?autoplay=0"
+                      frameborder="0">
+              </iframe>
             </div>
           </div> : null }
           {this.state.choice === 3 ? 

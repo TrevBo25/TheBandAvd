@@ -259,14 +259,19 @@ a {
     align-items: center; }
     .footer .emailholder .emailtitle {
       font-weight: bold;
-      font-size: 30px; }
+      font-size: 40px; }
     .footer .emailholder .emailwords {
-      color: white; }
-    .footer .emailholder .nameinput {
-      width: 90%;
-      font-size: 20px;
-      padding: 10px;
-      border-radius: 3px; }
+      color: white;
+      font-size: 20px; }
+    .footer .emailholder .nameinputholder {
+      display: flex;
+      justify-content: space-between;
+      width: 95%; }
+      .footer .emailholder .nameinputholder .nameinput {
+        width: 42%;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 3px; }
     .footer .emailholder .emailinput {
       font-size: 20px;
       padding: 10px;
@@ -276,10 +281,12 @@ a {
       padding: 10px;
       border-radius: 3px;
       border: white 2px solid;
-      font-size: 20px;
+      font-size: 30px;
       width: 90%;
       transition: all .5s ease;
-      cursor: pointer; }
+      cursor: pointer;
+      background: none;
+      color: white; }
       .footer .emailholder .subscribebutton:hover {
         background-color: white;
         color: black;
@@ -440,16 +447,17 @@ a {
         cursor: pointer; }
   .bigmedia .mediaholder {
     height: 100%;
-    width: 90%;
+    max-width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px; }
     .bigmedia .mediaholder .mediamusic {
       height: 100%;
-      width: 100%;
+      max-width: 100%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      flex-wrap: wrap; }
       .bigmedia .mediaholder .mediamusic .newmusic {
         flex: 1;
         height: 100%;
@@ -465,13 +473,14 @@ a {
         .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder {
           height: 100%;
           width: 100%;
-          display: flex; }
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap; }
           .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder {
             height: 100%;
-            width: 100%;
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center; }
             .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder .cover {
               max-height: 500px;
@@ -493,10 +502,10 @@ a {
           width: 100%;
           display: flex;
           justify-content: space-around;
-          align-items: center; }
+          align-items: center;
+          flex-wrap: wrap; }
           .bigmedia .mediaholder .mediamusic .oldmusic .oldmusicholder .coverholder {
             height: 100%;
-            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -509,18 +518,12 @@ a {
                 cursor: pointer; }
     .bigmedia .mediaholder .mediavideos {
       height: 100%;
-      width: 80%;
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
       align-items: center; }
-      .bigmedia .mediaholder .mediavideos .videorow {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-between; }
-        .bigmedia .mediaholder .mediavideos .videorow .video1 {
-          padding: 20px 0px 10px 0px;
-          overflow: hidden; }
-        .bigmedia .mediaholder .mediavideos .videorow .video2 {
-          padding: 10px 0px 20px 0px; }
+      .bigmedia .mediaholder .mediavideos .video {
+        padding: 20px 10px 10px 10px;
+        overflow: hidden; }

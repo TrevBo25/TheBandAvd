@@ -36,16 +36,17 @@
     }
     .mediaholder {
     height: 100%;
-    width: 90%;
+    max-width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
         .mediamusic {
             height: 100%;
-            width: 100%;
+            max-width: 100%;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
             .newmusic {
                 flex: 1;
                 height: 100%;
@@ -63,12 +64,13 @@
                     height: 100%;
                     width: 100%;
                     display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
                     .coverholder {
                         height: 100%;
-                        width: 100%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-around;
+                        justify-content: center;
                         align-items: center;
                         .cover {
                             max-height: 500px;
@@ -96,9 +98,9 @@
                     display: flex;
                     justify-content: space-around;
                     align-items: center;
+                    flex-wrap: wrap;
                     .coverholder {
                         height: 100%;
-                        width: 100%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-around;
@@ -117,23 +119,15 @@
         }
         .mediavideos {
             height: 100%;
-            width: 80%;
+            width: 100%;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            .videorow {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .video1 {
-                    padding: 20px 0px 10px 0px;
-                    overflow: hidden;
-                }
-                .video2 {
-                    padding: 10px 0px 20px 0px;
-                }
+            .video {
+                padding: 20px 10px 10px 10px;
+                overflow: hidden;
             }
         }
     }

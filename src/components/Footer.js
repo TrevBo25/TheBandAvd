@@ -1,9 +1,36 @@
 import React, {Component} from 'react';
+import axios from 'axios';
 
 export default class Footer extends Component {
     constructor(){
         super()
-    
+        this.state = {
+            fname: "",
+            lname: "",
+            email: ""
+        }
+
+        this.buildJSON = this.buildJSON.bind(this);
+        this.subscribe = this.subscribe.bind(this);
+    }
+
+    subscribe() {
+        var json = this.buildJSON();
+        console.log(json);
+        axios.post("https://us8.api.mailchimp.com/3.0/lists/49cb96b476/members", json, {"Authorization": "apikey f6ca1735ed5ffed5b5600b229d425d94-us8"})
+            .then( response => console.log(response))
+            .catch(err => console.log(err))
+    }
+
+    buildJSON() {
+        return {
+            "email_address": `${this.state.email}`,
+            "status": "subscribed",
+            "merge_fields": {
+                "MMERGE1": `${this.state.fname}`,
+                "MMERGE2": `${this.state.lname}`
+            }
+        }
     }
 
     render(){
@@ -22,9 +49,12 @@ export default class Footer extends Component {
                 <div className="emailholder">
                     <h2 className="emailtitle">Don't Miss Out!</h2>
                     <p className="emailwords">Sign-up for the newsletter to stay up to date with what the guys are up too!</p>
-                    <input className="nameinput" placeholder="Your Name" />
-                    <input className="emailinput" placeholder="your@email.com" />
-                    <div className="subscribebutton" >Subscribe</div>
+                    <div className="nameinputholder">
+                        <input className="nameinput" placeholder="your first name" onChange={e => this.setState({fname: e.target.value})} value={this.state.fname}  />
+                        <input className="nameinput" placeholder="your last name" onChange={e => this.setState({lname: e.target.value})} value={this.state.lname}  />
+                    </div>
+                    <input className="emailinput" type="email" placeholder="your@email.com" onChange={e => this.setState({email: e.target.value})} value={this.state.email} />
+                    <div className="subscribebutton" onClick={this.subscribe} >Subscribe</div>
                 </div>
             </div>
         )
