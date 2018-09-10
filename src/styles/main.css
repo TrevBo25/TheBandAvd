@@ -369,6 +369,12 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    @media screen and (max-width: 1230px) and (min-width: 500px) {
+      .footer .logoholder {
+        flex: 4; } }
+    @media screen and (max-width: 500px) {
+      .footer .logoholder {
+        height: 250px; } }
     .footer .logoholder .logofooter {
       height: 50%;
       width: auto; }
@@ -384,17 +390,11 @@ a {
         color: white; }
         .footer .logoholder .socialmediaholder .smicon:hover {
           color: #bfbfbf; }
-  @media screen and (max-width: 1230px) and (min-width: 1056px) {
-    .footer .logoholder {
-      flex: 4; } }
-  @media screen and (max-width: 1055px) {
-    .footer .logoholder {
-      flex: 1; } }
   .footer .emailholder {
     flex: 3;
     height: 350px;
+    width: 90%;
     text-align: center;
-    min-width: 500px;
     max-width: 650px;
     padding: 20px;
     margin-right: 50px;
@@ -403,12 +403,22 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
+    @media screen and (max-width: 1080px) {
+      .footer .emailholder {
+        margin-right: 0px; } }
     .footer .emailholder .emailtitle {
       font-weight: bold;
       font-size: 40px; }
+      @media screen and (max-width: 500px) {
+        .footer .emailholder .emailtitle {
+          font-size: 30px; } }
     .footer .emailholder .emailwords {
+      text-align: center;
       color: white;
       font-size: 20px; }
+      @media screen and (max-width: 500px) {
+        .footer .emailholder .emailwords {
+          font-size: 15px; } }
     .footer .emailholder .nameinputholder {
       display: flex;
       justify-content: space-between;
@@ -418,11 +428,19 @@ a {
         font-size: 20px;
         padding: 10px;
         border-radius: 3px; }
+        @media screen and (max-width: 500px) {
+          .footer .emailholder .nameinputholder .nameinput {
+            font-size: 15px;
+            padding: 5px; } }
     .footer .emailholder .emailinput {
       font-size: 20px;
       padding: 10px;
       border-radius: 3px;
       width: 90%; }
+      @media screen and (max-width: 500px) {
+        .footer .emailholder .emailinput {
+          font-size: 15px;
+          padding: 5px; } }
     .footer .emailholder .subscribebutton {
       padding: 10px;
       border-radius: 3px;
@@ -437,9 +455,6 @@ a {
         background-color: white;
         color: black;
         transition: all .5s ease; }
-  @media screen and (max-width: 1080px) {
-    .footer .emailholder {
-      margin-right: 0px; } }
 
 .bandinfoholder {
   border: 4px #1a1a1a solid;
@@ -672,12 +687,9 @@ a {
             .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder .cover {
               max-height: 450px;
               max-width: auto; }
-            @media screen and (max-width: 800px) {
-              .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder .cover {
-                max-height: 400px; } }
-      @media screen and (max-width: 1015px) {
-        .bigmedia .mediaholder .mediamusic .newmusic {
-          min-width: 100%; } }
+              @media screen and (max-width: 800px) {
+                .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder .coverholder .cover {
+                  max-height: 400px; } }
       .bigmedia .mediaholder .mediamusic .oldmusic {
         flex: 1;
         height: 100%;
@@ -688,6 +700,10 @@ a {
         align-items: center;
         margin-right: 15px;
         margin-left: -30px; }
+        @media screen and (max-width: 1015px) {
+          .bigmedia .mediaholder .mediamusic .oldmusic {
+            margin-right: 0px;
+            margin-left: 0px; } }
         .bigmedia .mediaholder .mediamusic .oldmusic .covertitle {
           font-size: 40px;
           font-weight: bold;
