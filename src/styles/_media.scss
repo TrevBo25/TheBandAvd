@@ -14,12 +14,14 @@
     .toggles {
         width: 80%;
         display: flex;
-        justify-content: flex-start;
-        align-items: space-around;
-        margin-top: 20px;
+        justify-content: center;
         .togglebutton {
             margin-right: 10px;
             font-size: 35px;
+            align-items: space-around;
+            margin-top: 20px;@media screen and (max-width: 700px) {
+                font-size: 25px;
+            }
             &:hover{
                 color: gray;
                 cursor: pointer; 
@@ -28,6 +30,9 @@
         .togglebuttonselected {
             margin-right: 10px;
             font-size: 35px;
+            margin-top: 20px;@media screen and (max-width: 700px) {
+                font-size: 25px;
+            }
             color: #EBFDFA;
             &:hover{
                 color: lightgray; 

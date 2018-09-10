@@ -18,14 +18,88 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media screen and (max-width: 700px) {
+            display: none;
+       }
         .lilnav{
             text-decoration: none;
             color: black;
             cursor: pointer;
+            transition: all .25s ease;
             &:hover{
                 color: rgb(122, 122, 122);
                 transition: all .25s ease;
             }
+        }
+    }
+    .mobilenav {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        .mobiletitle {
+            color: black;
+        }
+        .hamburger {
+            border: 1px black solid;
+            padding: 7px;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: absolute;
+            right: 0;
+            transform: translate( 0px, 52px);
+            height: 100%;
+            transition: all 1s ease;
+            .dholder {
+                padding: 5px;
+                background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png");
+                .navwords {
+                    padding: 5px;
+                    .lilnav{
+                        text-decoration: none;
+                        color: black;
+                        cursor: pointer;
+                        transition: all .25s ease;
+                        margin-right: 15px;
+                        &:hover{
+                            color: rgb(184, 184, 184);
+                            transition: all .25s ease;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+        .dropdownno {
+            position: absolute;
+            right: 0;
+            transform: translate( 145px, 52px);
+            height: 100%;
+            transition: all 1.5s ease;
+            .dholder {
+                padding: 5px;
+                background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png");
+                .navwords {
+                    padding: 5px;
+                    .lilnav{
+                        text-decoration: none;
+                        color: black;
+                        cursor: pointer;
+                        transition: all .25s ease;
+                        margin-right: 15px;
+                        &:hover{
+                            color: rgb(184, 184, 184);
+                            transition: all .25s ease;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 700px) {
+            display: none;
         }
     }
 }
@@ -43,20 +117,94 @@
     border-bottom: 2px white solid;
     font-family: $secondaryfont;
     background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg");
-    transition: all 1.5s ease;
+    transition: all 1s ease;
     .navbuttonholder{
         width: 80%;
         display: flex;
         justify-content: space-around;
         align-items: center;
+        @media screen and (max-width: 700px) {
+             display: none;
+        }
         .lilnav{
             text-decoration: none;
             color: white;
             cursor: pointer;
+            transition: all .25s ease;
             &:hover{
                 color: rgb(184, 184, 184);
                 transition: all .25s ease;
             }
+        }
+    }
+    .mobilenav {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        .mobiletitle {
+            color: white;
+        }
+        .hamburger {
+            border: 1px white solid;
+            padding: 7px;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: absolute;
+            right: 0;
+            transform: translate( 0px, 52px);
+            height: 100%;
+            transition: all 1s ease;
+            .dholder {
+                padding: 5px;
+                background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg");
+                .navwords {
+                    padding: 5px;
+                    .lilnav{
+                        text-decoration: none;
+                        color: white;
+                        cursor: pointer;
+                        transition: all .25s ease;
+                        margin-right: 15px;
+                        &:hover{
+                            color: rgb(184, 184, 184);
+                            transition: all .25s ease;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 700px) {
+            display: none;
+        }
+        .dropdownno {
+            position: absolute;
+            right: 0;
+            transform: translate( 145px, 52px);
+            height: 100%;
+            transition: all 1.5s ease;
+            .dholder {
+                padding: 5px;
+                background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg");
+                .navwords {
+                    padding: 5px;
+                    .lilnav{
+                        text-decoration: none;
+                        color: white;
+                        cursor: pointer;
+                        transition: all .25s ease;
+                        margin-right: 15px;
+                        &:hover{
+                            color: rgb(184, 184, 184);
+                            transition: all .25s ease;
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and (min-width: 700px) {
+            display: none;
         }
     }
 }

@@ -43,7 +43,7 @@ export default class Media extends Component{
       <div className="bigmedia" id="mediael">
         <h1 className="title">MEDIA</h1>
         <div className='toggles'>
-          <h3 className={this.state.choice === 1 ? "togglebuttonselected" : "togglebutton"} onClick={() => this.setState({choice : 1})}>Music</h3><h3 className={this.state.choice === 2 ? "togglebuttonselected" : "togglebutton"} onClick={() => this.setState({choice : 2})}>Videos</h3><h3 className={this.state.choice === 3 ? "togglebuttonselected" : "togglebutton"} onClick={() => this.setState({choice : 3})}>Photographs</h3>
+          <h3 className={this.state.choice === 1 ? "togglebuttonselected" : "togglebutton"} onClick={() => this.setState({choice : 1})}>Music.</h3><h3 className={this.state.choice === 2 ? "togglebuttonselected" : "togglebutton"} onClick={() => this.setState({choice : 2})}>Videos.</h3><h3 className={this.state.choice === 3 ? "togglebuttonselected" : "togglebutton"} onClick={() => this.setState({choice : 3})}>Photographs.</h3>
         </div>
         <div className="mediaholder">
           {this.state.choice === 1 ? 

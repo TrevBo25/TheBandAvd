@@ -9,15 +9,19 @@
     overflow: hidden;
     font-family: $secondaryfont;
     .gifholder{
-        height: 800px;
+        height: 100%;
         width: 100%;
-        background-image: url("./assets/AVDgif.gif");
         background-size: cover;
         background-position: center;
+        .thegif{
+            width: 100vw;
+            height: auto;
+        }
     }
     .whitebar{
         height: 3px;
         width: 100%;
         background-color: white;
+        margin-top: -1px;
     }
 }

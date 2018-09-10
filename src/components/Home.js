@@ -8,8 +8,8 @@ import TheBand from './TheBand';
 import Tour from './Tour';
 import Media from './Media';
 import Store from './Store';
-import Contact from './Contact';
 import Hero from './Hero';
+import gif from '../styles/assets/AVDgif.gif';
 
 export default class Home extends Component {
   constructor(){
@@ -40,7 +40,9 @@ export default class Home extends Component {
           <Media />
         </ScrollableAnchor>
         <div className="whitebar" ></div>
-        <div className="gifholder" ></div>
+        <div className="gifholder" >
+          <img src={gif} alt="" className="thegif" />
+        </div>
         <div className="whitebar"></div>
         <ScrollableAnchor id={'contact'}>
           {/* <Contact /> */}

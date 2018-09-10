@@ -17,11 +17,18 @@
     .bandtitle{
         font-weight: bold;
         font-size: 80px;
+        text-align: center;
+        @media screen and (max-width: 700px) {
+            font-size: 55px;
+        }
     }
     .infoholder{
         width: 70%;
         text-align: left;
         font-size: 20px;
+        @media screen and (max-width: 700px) {
+            font-size: 15px;
+        }
     }
     .bandimgholder{
         height: 320px;
@@ -32,6 +39,10 @@
         justify-content: center;
         align-items: center;
         border-radius: 2px;
+        @media screen and (max-width: 700px) {
+            height: 180px;
+            width: 320px;
+        }
         .bandimg{
             height: 97%;
             width: 97%;
