@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     .title {
-        font-size: 60px;
+        font-size: 70px;
         font-weight: bold;
     }
     .toggles {
@@ -16,9 +16,10 @@
         display: flex;
         justify-content: flex-start;
         align-items: space-around;
+        margin-top: 20px;
         .togglebutton {
             margin-right: 10px;
-            font-size: 25px;
+            font-size: 35px;
             &:hover{
                 color: gray;
                 cursor: pointer; 
@@ -26,7 +27,7 @@
         }
         .togglebuttonselected {
             margin-right: 10px;
-            font-size: 25px;
+            font-size: 35px;
             color: #EBFDFA;
             &:hover{
                 color: lightgray; 
@@ -36,36 +37,45 @@
     }
     .mediaholder {
     height: 100%;
-    max-width: 90%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
         .mediamusic {
             height: 100%;
-            max-width: 100%;
+            width: 100vw;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             .newmusic {
                 flex: 1;
                 height: 100%;
-                width: 100%;
+                min-width: 701px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-right: 20px;
+                margin-left: 15px;
+                @media screen and (max-width: 1015px) {
+                    min-width: 100%;
+                }
                 .covertitle {
                     font-size: 40px;
                     font-weight: bold;
                     margin-bottom: 20px;
+                    text-align: center;
                 }
                 .newmusicholder{
                     height: 100%;
-                    width: 100%;
+                    min-width: 100%;
                     display: flex;
                     justify-content: space-around;
+                    align-items: center;
+                    flex-direction: row;
                     flex-wrap: wrap;
+                    margin-right: 25px;
                     .coverholder {
                         height: 100%;
                         display: flex;
@@ -73,10 +83,20 @@
                         justify-content: center;
                         align-items: center;
                         .cover {
-                            max-height: 500px;
+                            max-height: 450px;
                             max-width: auto;
                         }
+                        @media screen and (max-width: 800px) {
+                            .cover {
+                                max-height: 400px;
+                            }
+                        }
                     }
+                }
+            }
+            @media screen and (max-width: 1015px) {
+                .newmusic{
+                    min-width: 100%;
                 }
             }
             .oldmusic {
@@ -87,13 +107,16 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                margin-right: 15px;
+                margin-left: -30px;
                 .covertitle {
                     font-size: 40px;
                     font-weight: bold;
                     margin-bottom: 20px;
+                    text-align: center;
                 }
                 .oldmusicholder{
-                    height: 100%;
+                    min-height: 100%;
                     width: 100%;
                     display: flex;
                     justify-content: space-around;
@@ -106,13 +129,18 @@
                         justify-content: space-around;
                         align-items: center;
                         .lilcover {
-                            max-height: 250px;
-                            max-width: 250px;
+                            max-height: 200px;
+                            max-width: 200px;
                             margin: 10px 0px;
                             &:hover{
                                 cursor: pointer; 
                             }
                         }
+                        @media screen and (max-width: 1230px) and (min-width: 1015px) {
+                            .lilcover{
+                                display: none
+                            }
+                          }
                     }
                 }
             }
@@ -126,9 +154,18 @@
             justify-content: space-around;
             align-items: center;
             .video {
-                padding: 20px 10px 10px 10px;
+                padding: 10px;
                 overflow: hidden;
             }
+        }
+        .photoholder {
+            max-height: 100%;
+            width: 1400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
         }
     }
 }
