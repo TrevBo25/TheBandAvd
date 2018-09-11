@@ -23,22 +23,18 @@ export default class Media extends Component{
   }
   
   updateWindowDimensions() {
-    console.log('hit');
     if (window.innerWidth < 1350 && window.innerWidth > 1015) {
       this.setState({vwidth: "480", vheight: "270"})
     } else if (window.innerWidth < 670 && window.innerWidth > 510) {
       this.setState({vwidth: "480", vheight: "270"})
     } else if (window.innerWidth < 511) {
-      console.log('hot');
-      this.setState({vwidth: "320", vheight: "180"})
+      this.setState({vwidth: "300", vheight: "170"})
     } else {
       this.setState({vwidth: "640", vheight: "360"})
     }
-    console.log( window.innerWidth < 510 );
   }
 
   render(){
-    console.log(this.state);
     return(
       <div className="bigmedia" id="mediael">
         <h1 className="title">MEDIA</h1>

@@ -32,7 +32,6 @@ export default class Nav extends Component {
   }
   
   updateWindowDimensions() {
-    console.log( window.innerWidth, window.innerHeight );
   }
 
   handleClick() {

@@ -9,7 +9,6 @@ export default class LilMenu extends Component {
     }
 
     render(){
-        console.log(this.state);
         return(
             <div className={this.props.show ? "lilmenuwrap" : "gone"}>
                 {this.state.show ? <div className="lilmenuitems">

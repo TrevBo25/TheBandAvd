@@ -30,9 +30,7 @@ export default class TheBand extends Component {
   }
 
   toggleBand(showModal){
-    console.log('showModal', showModal, 'state', this.state.show);
     if(this.state.show && showModal){
-      console.log('hit');
       return;
     }
     this.setState((state) => ({show: showModal}))
