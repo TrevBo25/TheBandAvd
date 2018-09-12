@@ -108,7 +108,8 @@ a {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    transition: all 1.5s ease; }
     .light .mobilenav .mobiletitle {
       color: black; }
     .light .mobilenav .hamburger {
@@ -123,6 +124,7 @@ a {
       transition: all 1s ease; }
       .light .mobilenav .dropdown .dholder {
         padding: 5px;
+        transition: all 1.5s ease;
         background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png"); }
         .light .mobilenav .dropdown .dholder .navwords {
           padding: 5px; }
@@ -146,6 +148,7 @@ a {
       transition: all 1.5s ease; }
       .light .mobilenav .dropdownno .dholder {
         padding: 5px;
+        transition: all 1.5s ease;
         background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/Selection_004.png"); }
         .light .mobilenav .dropdownno .dholder .navwords {
           padding: 5px; }
@@ -197,7 +200,8 @@ a {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    transition: all 1.5s ease; }
     .dark .mobilenav .mobiletitle {
       color: white; }
     .dark .mobilenav .hamburger {
@@ -212,6 +216,7 @@ a {
       transition: all 1s ease; }
       .dark .mobilenav .dropdown .dholder {
         padding: 5px;
+        transition: all 1.5s ease;
         background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg"); }
         .dark .mobilenav .dropdown .dholder .navwords {
           padding: 5px; }
@@ -235,6 +240,7 @@ a {
       transition: all 1.5s ease; }
       .dark .mobilenav .dropdownno .dholder {
         padding: 5px;
+        transition: all 1.5s ease;
         background-image: url("https://s3.us-east-2.amazonaws.com/thebandavd/graybackground.jpg"); }
         .dark .mobilenav .dropdownno .dholder .navwords {
           padding: 5px; }
