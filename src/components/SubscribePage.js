@@ -16,22 +16,22 @@ export default class SubscribePage extends Component {
                 <input type="hidden" name="u" value="e5e3fec5ea23fc095decf064a"/>
                 <input type="hidden" name="id" value="49cb96b476"/>
                 <div className="nameinputholder">
-                    <label htmlFor='MERGE1'>
+                    <label htmlFor='MMERGE1'>
                         <input 
                             type="text" 
                             name="FNAME" 
-                            id="MERGE1" 
+                            id="MMERGE1" 
                             value={this.state.fNameValue} 
                             onChange={(e)=>{this.setState({fNameValue: e.target.value});}}
                             placeholder="your first name"
                             className="nameinput"
                         />
                     </label>
-                    <label htmlFor='MERGE2'>
+                    <label htmlFor='MMERGE2'>
                         <input 
                             type="text" 
                             name="LNAME" 
-                            id="MERGE2" 
+                            id="MMERGE2" 
                             value={this.state.lNameValue} 
                             onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
                             placeholder="your last name"
@@ -39,11 +39,11 @@ export default class SubscribePage extends Component {
                         />
                     </label>
                 </div>
-                <label htmlFor='MERGE0'>
+                <label htmlFor='MMERGE0'>
                     <input 
                         type="email" 
                         name="EMAIL" 
-                        id="MERGE0"
+                        id="MMERGE0"
                         value={this.state.emailValue} 
                         onChange={ (e)=>{this.setState({emailValue: e.target.value});} } 
                         autoCapitalize="off" 
