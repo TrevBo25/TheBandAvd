@@ -698,7 +698,8 @@ a {
           font-size: 40px;
           font-weight: bold;
           margin-bottom: 20px;
-          text-align: center; }
+          text-align: center;
+          padding-right: 25px; }
         .bigmedia .mediaholder .mediamusic .newmusic .newmusicholder {
           height: 100%;
           min-width: 100%;

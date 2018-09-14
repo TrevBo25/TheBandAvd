@@ -14,7 +14,7 @@ export default class Nav extends Component {
     var bodytop = document.body.getBoundingClientRect().top;
     var bandtop = document.getElementById("theband").getBoundingClientRect().top;
     var mediatop = document.getElementById("mediael").getBoundingClientRect().top;
-    if ((window.scrollY + 54) > (bandtop - bodytop) &&(window.scrollY + 54) < (mediatop - bodytop)) {
+    if ((window.scrollY + 56) > (bandtop - bodytop) &&(window.scrollY + 54) < (mediatop - bodytop)) {
       this.setState({background: "light"})
     } else {
       this.setState({background: "dark"})

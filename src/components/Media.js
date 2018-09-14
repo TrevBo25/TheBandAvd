@@ -45,13 +45,13 @@ export default class Media extends Component{
           {this.state.choice === 1 ? 
           <div className="mediamusic">
             <div className="newmusic">
-              <h2 className="covertitle" >Whiskey & Sherbet Coming Soon!</h2>
+              <h2 className="covertitle" >Whiskey & Sherbet Available Now!</h2>
               <div className="newmusicholder">
                 <div className="coverholder">
                   <img src="https://s3.us-east-2.amazonaws.com/thebandavd/AD-023-Whisky-Sherbert-Album-Cover-iTunes.jpg" alt="" className="cover" />
                 </div>
                 <SpotifyPlayer
-                  uri="spotify:album:4zqVUK5Au5qdNXk60ZEBD6"
+                  uri="spotify:album:4qlXVtMAmH44g3iROzmGoe"
                   size={{width: 250, height: 480}}
                   view="coverart"
                   theme="black"
