@@ -18,7 +18,7 @@ export default class Footer extends Component {
                 </div>
                 <div className="emailholder">
                     <h2 className="emailtitle">Don't Miss Out!</h2>
-                    <p className="emailwords">Sign-up for the newsletter to stay up to date with what the guys are up too!</p>
+                    <p className="emailwords">Sign-up for the newsletter to stay up to date with what the guys are up to!</p>
                     <SubscribePage />
                 </div>
             </div>
