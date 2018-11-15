@@ -99,7 +99,7 @@ export default class Media extends Component{
                       type="text/html" 
                       width={this.state.vwidth} 
                       height={this.state.vheight}
-                      src="https://www.youtube.com/embed/w9JmEtFm83s?autoplay=0"
+                      src="https://www.youtube.com/embed/F5e07skRKgQ?autoplay=0"
                       frameborder="0">
               </iframe>
             </div>
@@ -108,7 +108,7 @@ export default class Media extends Component{
                       type="text/html" 
                       width={this.state.vwidth} 
                       height={this.state.vheight}
-                      src="https://www.youtube.com/embed/HM8cKb6yLa0?autoplay=0"
+                      src="https://www.youtube.com/embed/VlP-ZcA0I1I?autoplay=0"
                       frameborder="0">
               </iframe>
             </div>
