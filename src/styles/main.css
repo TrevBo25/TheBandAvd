@@ -397,6 +397,23 @@ a {
         color: white; }
         .footer .logoholder .socialmediaholder .smicon:hover {
           color: #bfbfbf; }
+    .footer .logoholder .booking {
+      min-width: 70%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+      .footer .logoholder .booking .booking-title {
+        font-size: 20px;
+        font-weight: bold; }
+      .footer .logoholder .booking .booking-text {
+        font-size: 14px;
+        color: white;
+        font-weight: bold;
+        margin: 4px; }
+      .footer .logoholder .booking .underline {
+        text-decoration: underline; }
   .footer .emailholder {
     flex: 3;
     height: 350px;
@@ -405,6 +422,7 @@ a {
     max-width: 650px;
     padding: 20px;
     margin-right: 50px;
+    margin-top: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
