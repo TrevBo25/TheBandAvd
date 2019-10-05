@@ -49,7 +49,7 @@ export default class Nav extends Component {
           <a href="#tour"><span className="lilnav">TOUR</span></a>
           <a href="#media"><span className="lilnav">MEDIA</span></a>
           <a href="#contact"><span className="lilnav">CONTACT</span></a>
-          <a href="http://signalflowpr.com/avon-dale/" target="_blank" rel="noopener noreferrer" ><span className="lilnav">EPK</span></a>
+          <a href="http://avondale-epk.surge.sh/" target="_blank" rel="noopener noreferrer" ><span className="lilnav">EPK</span></a>
         </div>
         <div className="mobilenav">
           <h1 className="mobiletitle">THE BAND AVON DALE</h1>
@@ -73,7 +73,7 @@ export default class Nav extends Component {
               <div className="navwords"><a href="#tour"><span className="lilnav">TOUR</span></a></div>
               <div className="navwords"><a href="#media"><span className="lilnav">MEDIA</span></a></div>
               <div className="navwords"><a href="#contact"><span className="lilnav">CONTACT</span></a></div>
-              <div className="navwords"><a href="http://signalflowpr.com/avon-dale/" target="_blank" rel="noopener noreferrer" ><span className="lilnav">EPK</span></a></div>
+              <div className="navwords"><a href="http://avondale-epk.surge.sh/" target="_blank" rel="noopener noreferrer" ><span className="lilnav">EPK</span></a></div>
             </div>
           </div>
         </div>
